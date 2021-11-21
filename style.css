@@ -1,17 +1,44 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  padding:0;
+  margin:0;
+  border:0
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 body {
-  background-color: chartreuse;
+  background-color: cornflowerblue;
 }
 
 #header {
-  margin: 0 auto;
-  height: 16vh;
-  width: 80vw;
+  padding: 8vh 16vw;
   text-align: center;
-  padding: 8vh 16vh;
+  background-color: black;
+  color: aliceblue;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8vh 16vw;
+  margin: 15px;
+}
+
+#personal-info > label input {
+  display: block;
+}
+
+#review {
+  display: block;
+  margin-bottom: 4vh;
+}
+
+#submit {
+  background-color: greenyellow;
+  cursor: pointer;
 }
