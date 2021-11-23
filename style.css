@@ -15,22 +15,58 @@ body {
 }
 
 #header {
-  padding: 8vh 16vw;
+  padding: 8vh 8vw;
   text-align: center;
   background-color: black;
   color: aliceblue;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  width: 90%;
+  margin: 5% auto;
+  border-radius: 5%;
 }
 
 #survey-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8vh 16vw;
-  margin: 15px;
+  padding: 4vh 8vw;
+  margin: 8vh;
+}
+
+#survey-form h2 {
+  text-align: center;
+  margin-bottom: 8vh;
 }
 
 #personal-info > label input {
   display: block;
+}
+
+input[type=text], input[type=email], input[type=number] {
+  width: 100%;
+  padding: 2%;
+  margin: 2% 0 4% 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+#dropdown-container, #recomendation-container, #checkbox-container, #review-container {
+  padding: 4% 0;
+  margin: 2% 0 4% 0;
+}
+
+#recomendation-container input {
+  margin-left: 8%;
+}
+
+#review-container textarea {
+  width: 100%;
 }
 
 #review {
@@ -38,7 +74,12 @@ body {
   margin-bottom: 4vh;
 }
 
-#submit {
-  background-color: greenyellow;
-  cursor: pointer;
+button {
+  border: none;
+  color: white; 
+  padding: 2% 4%; 
+  cursor: pointer; 
 }
+
+#submit {background-color: #041daa;}
+#submit:hover {background-color: #1947d3;}
